@@ -5,7 +5,7 @@ import { createSlice } from '@reduxjs/toolkit';
 export const authApi = createApi({
   reducerPath: 'authApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://code-vault-backend-mu.vercel.app/api',
+    baseUrl: 'https://codevault-backend-kths.onrender.com/api',
     prepareHeaders: (headers, { getState }) => {
       const token = getState().auth.token;
       if (token) {
